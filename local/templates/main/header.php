@@ -163,6 +163,32 @@ Loc::loadMessages(__FILE__);?>
 
     <div class="slide slide-roundabout bg1">
         <div class="containit ornament-right">
+            <div class="roundaboutshadow">
+                <h1 class="mb4">You can have a Bigger single  Roundabout here.</h1>
+                <p class="mb20">Amazingly this IS compatible with all modern and current Browsers.</p>
+                <!-- roundabout images targets, prettyphoto opens on click of the middle item -->
+
+                <script type="text/javascript" charset="utf-8">
+                    function roundaboutimage1(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/apple-iphone-5s-space-gray-.jpg', 'title', 'Some Brilliant Project'); }
+                    function roundaboutimage2(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/Lenovo-i880-big.jpg', 'title', 'Another One'); }
+                    function roundaboutimage3(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/samsung.jpg', 'title', 'This is Insane'); }
+                    function roundaboutimage4(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/samsung2.jpg', 'title', 'Another Comment'); }
+                    function roundaboutimage5(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/xiaomi.jpg', 'title', 'This roundabout Rules'); }
+                    function roundaboutimage6(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/iphone5s-3_3.jpg', 'title', 'Awsome Commment'); }
+                    function roundaboutimage7(){  $.prettyPhoto.open('<?=SITE_TEMPLATE_PATH;?>/images/showcase/samsung3.jpg', 'title', 'And Another One'); }
+                </script>
+                <!-- the actual roundabout -->
+                <ul id="roundabout">
+                    <li id="roundaboutimage1"><a href="javascript:roundaboutimage1();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/apple-iphone-5s-space-gray-.jpg" alt="" /></a></li>
+                    <li id="roundaboutimage2"><a href="javascript:roundaboutimage2();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/Lenovo-i880-big.jpg" alt="" /></a></li>
+                    <li id="roundaboutimage3"><a href="javascript:roundaboutimage3();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/samsung.jpg" alt="" /></a></li>
+                    <li id="roundaboutimage4"><a href="javascript:roundaboutimage4();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/samsung2.jpg" alt="" /></a></li>
+                    <li id="roundaboutimage5"><a href="javascript:roundaboutimage5();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/xiaomi.jpg" alt="" /></a></li>
+                    <li id="roundaboutimage6"><a href="javascript:roundaboutimage6();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/iphone5s-3_3.jpg" alt="" /></a></li>
+                    <li id="roundaboutimage7"><a href="javascript:roundaboutimage7();"><img src="<?=SITE_TEMPLATE_PATH;?>/images/showcase/roundabout/samsung3.jpg" alt="" /></a></li>
+                </ul>
+                <div id="filler"><!--  --></div>
+            </div>
             <?$APPLICATION->IncludeComponent("bitrix:photo.section", "top_slider", Array(
 	"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
 		"AJAX_MODE" => "N",	// Включить режим AJAX
@@ -223,6 +249,8 @@ Loc::loadMessages(__FILE__);?>
         </div>
     </div>
 </div>
+
+
 
 
 <!-- start main content -->
